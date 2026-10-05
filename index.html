@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#050711">
+<title>Happiestt Birthdayyy Amey 🫶🏻</title>
+<style>
+:root{
+  --bg:#04050d;--red:#e92845;--blue:#263dff;--orange:#ff9b35;
+  --white:#f7f7fb;--muted:#b8b9c9;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--white);font-family:Inter,-apple-system,BlinkMacSystemFont,"SF Pro Display",Arial,sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.45;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:110px 110px;z-index:0}
+section{position:relative;z-index:1}
+.hero{min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;overflow:hidden;background:
+radial-gradient(circle at 50% 35%,rgba(44,57,145,.28),transparent 34%),
+radial-gradient(circle at 20% 80%,rgba(232,40,69,.12),transparent 30%)}
+.hero-inner{width:min(900px,100%);position:relative}
+.kicker{font-size:12px;letter-spacing:4px;text-transform:uppercase;color:#b9bad0}
+h1{font-size:clamp(48px,13vw,110px);line-height:.86;margin:22px 0 20px;font-weight:900;letter-spacing:-5px;background:linear-gradient(90deg,#fff 0%,#ff4661 42%,#9ca5ff 100%);-webkit-background-clip:text;color:transparent}
+.subtitle{font-size:clamp(16px,3vw,21px);line-height:1.55;color:var(--muted);max-width:650px;margin:auto}
+.cta{display:inline-flex;margin-top:30px;padding:15px 23px;border:1px solid rgba(255,255,255,.2);border-radius:999px;background:rgba(255,255,255,.08);color:#fff;text-decoration:none;font-weight:800;backdrop-filter:blur(10px)}
+.web-line{position:absolute;left:50%;top:-160px;width:2px;height:310px;background:linear-gradient(#fff,rgba(255,255,255,.08));animation:drop 2.1s cubic-bezier(.2,.8,.2,1) forwards}
+.spider{position:absolute;left:50%;top:92px;transform:translateX(-50%);width:72px;height:98px;border-radius:46% 46% 34% 34%;background:linear-gradient(145deg,#e51f3f 0 47%,#10121b 48%);box-shadow:0 20px 45px #000;animation:swing 2.2s ease-out forwards;z-index:2}
+.spider:before,.spider:after{content:"";position:absolute;top:26px;width:24px;height:14px;background:#fff;border:3px solid #10121b;border-radius:80% 20%}
+.spider:before{left:8px;transform:rotate(25deg)}.spider:after{right:8px;transform:rotate(-25deg)}
+.spider .chest{position:absolute;left:50%;top:48px;width:24px;height:24px;transform:translateX(-50%);border:2px solid #111;border-radius:50%}
+.portal{position:absolute;right:7%;top:100px;width:135px;height:135px;border-radius:50%;border:5px solid var(--orange);box-shadow:0 0 25px var(--orange),0 0 75px rgba(255,105,0,.45);animation:portal 2.8s ease-in-out infinite}
+.portal:before,.portal:after{content:"";position:absolute;inset:12px;border:2px dashed #ffd08e;border-radius:50%;transform:rotate(25deg)}
+.portal:after{inset:28px;transform:rotate(-38deg)}
+.strange{position:absolute;right:10%;top:126px;width:62px;height:85px;border-radius:35% 35% 15% 15%;background:linear-gradient(90deg,#47226f,#8f3c51);filter:drop-shadow(0 15px 12px #000);z-index:1}
+.strange:before{content:"";position:absolute;left:18px;top:-24px;width:27px;height:32px;border-radius:50%;background:#d79a73}
+.strange:after{content:"";position:absolute;left:-30px;top:25px;width:120px;height:80px;border:4px solid #e85e27;border-left-color:transparent;border-bottom-color:transparent;border-radius:50%;transform:rotate(12deg)}
+@keyframes drop{to{top:15px}}@keyframes swing{0%{top:-80px;opacity:0;transform:translateX(-50%) rotate(-14deg)}60%{top:92px;opacity:1}100%{top:105px;transform:translateX(-50%) rotate(4deg)}}@keyframes portal{50%{transform:scale(1.08) rotate(10deg);filter:brightness(1.25)}}
+.story{padding:90px 20px 110px;background:linear-gradient(180deg,#060713,#090a18)}
+.wrap{width:min(1000px,100%);margin:auto}
+.section-title{text-align:center;font-size:clamp(32px,7vw,58px);margin:0 0 14px;letter-spacing:-2px}
+.section-note{text-align:center;color:var(--muted);margin:0 auto 45px;max-width:650px;line-height:1.6}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.card{background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.12);border-radius:24px;overflow:hidden;box-shadow:0 18px 55px rgba(0,0,0,.28)}
+.card img{display:block;width:100%;height:420px;object-fit:cover}
+.card:nth-child(1) img{object-position:center 35%}
+.card:nth-child(2) img{object-position:center 35%}
+.card:nth-child(3) img{object-position:center 35%}
+.card:nth-child(4) img{object-position:center 55%}
+.caption{padding:14px 17px;color:#c9cad7;font-size:13px}
+.letter{margin:70px auto 0;max-width:760px;padding:32px 28px;border-radius:28px;background:linear-gradient(135deg,rgba(232,40,69,.11),rgba(38,61,255,.10));border:1px solid rgba(255,255,255,.13);box-shadow:0 20px 80px rgba(0,0,0,.35)}
+.letter h2{font-size:30px;margin:0 0 20px}.letter p{font-size:19px;line-height:1.85;color:#eee;white-space:pre-line;margin:0}
+.final{min-height:55svh;display:flex;align-items:center;justify-content:center;text-align:center;padding:70px 22px;background:
+radial-gradient(circle at 50% 50%,rgba(232,40,69,.18),transparent 45%),#04050d}
+.final h2{font-size:clamp(38px,9vw,76px);margin:0 0 15px}.final p{color:var(--muted);font-size:17px}
+.heart{font-size:44px;display:block;margin-bottom:20px;animation:pulse 1.4s infinite}@keyframes pulse{50%{transform:scale(1.15)}}
+@media(max-width:700px){.portal,.strange{right:3%}.portal{width:95px;height:95px;top:130px}.strange{top:153px;transform:scale(.78);transform-origin:center}.gallery{grid-template-columns:1fr}.card img{height:430px}h1{letter-spacing:-3px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<section class="hero" id="top">
+  <div class="hero-inner">
+    <div class="web-line"></div>
+    <div class="spider"><div class="chest"></div></div>
+    <div class="portal"></div><div class="strange"></div>
+
+    <div class="kicker">A little multiverse surprise</div>
+    <h1>HAPPY<br>BIRTHDAY<br>AMEY 🫶🏻</h1>
+    <p class="subtitle">Spider-Man has arrived. Doctor Strange opened a portal.<br>Apparently, the multiverse had one very important mission today.</p>
+    <a class="cta" href="#memories">OPEN YOUR BIRTHDAY PORTAL ✨</a>
+  </div>
+</section>
+
+<section class="story" id="memories">
+  <div class="wrap">
+    <h2 class="section-title">A few of my favourite memories 📸</h2>
+    <p class="section-note">Four little moments that deserved their own corner of the multiverse.</p>
+
+    <div class="gallery">
+      <article class="card"><img src="photo1.jpeg" alt="Birthday memory with Amey"><div class="caption">One of those random moments that became a memory ❤️</div></article>
+      <article class="card"><img src="photo2.jpeg" alt="Amey at a night event"><div class="caption">Main character energy, obviously.</div></article>
+      <article class="card"><img src="photo3.jpeg" alt="Amey in a white outfit"><div class="caption">Okay… this one deserved to be here. ✨</div></article>
+      <article class="card"><img src="photo4.jpeg" alt="A college memory with Amey"><div class="caption">And one more for the memories. 🫶🏻</div></article>
+    </div>
+
+    <div class="letter">
+      <h2>For you, Amey 💌</h2>
+      <p>Happiestt birthdayyy amey 🫶🏻,
+
+May u get the bestest of everything, may all ur dreams come true and may u have the happiest, beautiful and peaceful life ahead ❤️</p>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div>
+    <span class="heart">❤️</span>
+    <h2>Made specially for you.</h2>
+    <p>From someone who wanted your birthday to have its own little universe. 🕷️🌀</p>
+  </div>
+</section>
+
+<script>
+document.querySelector('.cta').addEventListener('click',()=>{document.body.classList.add('opened')});
+</script>
+</body>
+</html>
