@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#050711">
+<title>Happiestt Birthdayyy Amey 🫶🏻</title>
+<style>
+:root{
+  --bg:#03040b;--panel:#0b0d1a;--red:#ed2948;--blue:#5966ff;--orange:#ff8d2f;
+  --white:#f8f8ff;--muted:#b8bacb;--line:rgba(255,255,255,.13)
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--white);font-family:Inter,-apple-system,BlinkMacSystemFont,"SF Pro Display",Arial,sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.32;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:115px 115px;z-index:0}
+section{position:relative;z-index:1}
+
+/* HERO */
+.hero{min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;padding:34px 20px 46px;overflow:hidden;background:
+ radial-gradient(circle at 50% 24%,rgba(64,75,180,.22),transparent 30%),
+ radial-gradient(circle at 18% 80%,rgba(237,41,72,.12),transparent 28%),
+ radial-gradient(circle at 85% 60%,rgba(255,141,47,.08),transparent 25%)}
+.hero-inner{width:min(760px,100%);position:relative;display:flex;flex-direction:column;align-items:center}
+.kicker{font-size:11px;letter-spacing:4px;text-transform:uppercase;color:#bfc0d3;margin-top:72px;opacity:.9}
+.web-drop{position:absolute;top:-18px;left:50%;width:2px;height:110px;transform:translateX(-50%);background:linear-gradient(to bottom,rgba(255,255,255,.9),rgba(255,255,255,.08));box-shadow:0 0 8px rgba(255,255,255,.25);animation:webDrop 1.7s cubic-bezier(.2,.8,.2,1) both}
+ .spider{position:absolute;top:70px;left:50%;width:112px;height:auto;transform:translateX(-50%);filter:drop-shadow(0 18px 28px rgba(0,0,0,.65)) drop-shadow(0 0 18px rgba(237,41,72,.25));animation:spiderDrop 1.9s cubic-bezier(.2,.8,.2,1) both;z-index:4;display:block} .spider img{display:block;width:100%;height:auto}.hero h1{font-size:clamp(50px,13vw,104px);line-height:.9;margin:20px 0 0;font-weight:950;letter-spacing:-5px}
+.hero h1 .line{display:block}
+.hero h1 .birthday{background:linear-gradient(90deg,#fff 0%,#ff4661 48%,#a8adff 100%);-webkit-background-clip:text;color:transparent}
+.hero h1 .amey{font-size:.88em;background:linear-gradient(90deg,#ff4661,#fff,#8f98ff);-webkit-background-clip:text;color:transparent}
+
+/* CLEAN PORTAL: centered, symmetrical, no distorted character */
+.portal-wrap{position:relative;width:168px;height:168px;margin:22px auto 12px;display:grid;place-items:center;animation:portalFloat 3.4s ease-in-out infinite}
+.portal-glow{position:absolute;inset:18px;border-radius:50%;background:radial-gradient(circle,rgba(255,136,40,.24),rgba(255,79,20,.07) 42%,transparent 70%);filter:blur(4px)}
+.portal{position:absolute;inset:14px;border-radius:50%;border:5px solid #ff8d2f;box-shadow:0 0 10px #ff8d2f,0 0 26px rgba(255,116,28,.85),inset 0 0 22px rgba(255,166,85,.65);background:radial-gradient(circle at center,rgba(255,143,47,.14),rgba(20,8,12,.38) 58%,transparent 70%)}
+.portal:before,.portal:after{content:"";position:absolute;border-radius:50%;inset:10px;border:2px dashed rgba(255,215,157,.95)}
+.portal:before{transform:rotate(22deg) scaleX(.86)}
+.portal:after{inset:23px;transform:rotate(-28deg) scaleY(.82);border-style:solid;border-color:rgba(255,170,84,.82)}
+.portal-core{position:absolute;width:42px;height:42px;border-radius:50%;background:radial-gradient(circle,#ffd08d 0 6%,#ff7d2d 25%,#5b1933 57%,#100914 72%);box-shadow:0 0 22px rgba(255,130,40,.8);animation:corePulse 2.2s ease-in-out infinite}
+.portal-sparks{position:absolute;inset:-8px;border-radius:50%;border:1px solid rgba(255,141,47,.2);box-shadow:0 0 18px rgba(255,141,47,.18)}
+.portal-label{font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:#ffc991;margin-top:-2px}
+.subtitle{font-size:clamp(15px,3vw,20px);line-height:1.65;color:var(--muted);max-width:650px;margin:22px auto 0}
+.cta{display:inline-flex;margin-top:28px;padding:15px 22px;border:1px solid rgba(255,255,255,.18);border-radius:999px;background:rgba(255,255,255,.075);color:#fff;text-decoration:none;font-weight:800;backdrop-filter:blur(12px);box-shadow:0 10px 35px rgba(0,0,0,.25);transition:.25s}
+.cta:hover{transform:translateY(-2px);background:rgba(255,255,255,.12)}
+
+/* MUSIC */
+.music-card{margin-top:22px;width:min(430px,100%);padding:12px 14px;border:1px solid rgba(255,255,255,.13);border-radius:20px;background:rgba(10,12,25,.66);backdrop-filter:blur(12px);display:flex;align-items:center;gap:12px;box-shadow:0 14px 40px rgba(0,0,0,.28)}
+.music-disc{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;flex:0 0 auto;background:radial-gradient(circle,#fff 0 7%,#ff596f 8% 23%,#151827 24% 100%);box-shadow:0 0 18px rgba(237,41,72,.25);font-size:17px}
+.music-copy{text-align:left;flex:1;min-width:0}.music-copy strong{display:block;font-size:13px}.music-copy span{display:block;font-size:11px;color:#aeb0c1;margin-top:3px}
+.music-btn{border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.09);color:#fff;border-radius:999px;padding:9px 13px;font-weight:800;cursor:pointer;white-space:nowrap}
+.music-btn:active{transform:scale(.97)}
+.music-hint{font-size:10px;color:#8f91a4;margin-top:7px}
+
+/* STORY */
+.story{padding:90px 20px 110px;background:linear-gradient(180deg,#060713,#090a18)}
+.wrap{width:min(1000px,100%);margin:auto}.section-title{text-align:center;font-size:clamp(32px,7vw,58px);margin:0 0 14px;letter-spacing:-2px}.section-note{text-align:center;color:var(--muted);margin:0 auto 45px;max-width:650px;line-height:1.6}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.card{background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.12);border-radius:24px;overflow:hidden;box-shadow:0 18px 55px rgba(0,0,0,.28);transition:transform .25s,box-shadow .25s}.card:hover{transform:translateY(-4px);box-shadow:0 24px 65px rgba(0,0,0,.4)}
+.card img{display:block;width:100%;height:420px;object-fit:cover}.card:nth-child(1) img{object-position:center 35%}.card:nth-child(2) img{object-position:center 35%}.card:nth-child(3) img{object-position:center 35%}.card:nth-child(4) img{object-position:center 55%}.caption{padding:14px 17px;color:#c9cad7;font-size:13px}
+.letter{margin:70px auto 0;max-width:760px;padding:34px 28px;border-radius:28px;background:linear-gradient(135deg,rgba(232,40,69,.12),rgba(38,61,255,.11));border:1px solid rgba(255,255,255,.13);box-shadow:0 20px 80px rgba(0,0,0,.35)}.letter h2{font-size:30px;margin:0 0 20px}.letter p{font-size:19px;line-height:1.85;color:#eee;white-space:pre-line;margin:0}
+.final{min-height:55svh;display:flex;align-items:center;justify-content:center;text-align:center;padding:70px 22px;background:radial-gradient(circle at 50% 50%,rgba(232,40,69,.18),transparent 45%),#04050d}.final h2{font-size:clamp(38px,9vw,76px);margin:0 0 15px}.final p{color:var(--muted);font-size:17px}.heart{font-size:44px;display:block;margin-bottom:20px;animation:pulse 1.4s infinite}
+
+@keyframes webDrop{0%{height:0;opacity:0}20%{opacity:1}100%{height:110px;opacity:1}}
+@keyframes spiderDrop{0%{top:-190px;opacity:0;transform:translateX(-50%)}65%{top:70px;opacity:1}100%{top:70px;transform:translateX(-50%)}}
+@keyframes portalFloat{50%{transform:translateY(-4px) scale(1.015)}}
+@keyframes corePulse{50%{transform:scale(1.14);filter:brightness(1.15)}}
+@keyframes pulse{50%{transform:scale(1.15)}}
+@media(max-width:700px){.hero{padding-left:16px;padding-right:16px}.kicker{margin-top:62px}.web-drop{top:-12px;height:92px}.spider{top:58px;width:96px;transform:translateX(-50%)}@keyframes spiderDrop{0%{top:-160px;opacity:0;transform:translateX(-50%)}65%{top:58px;opacity:1}100%{top:58px;transform:translateX(-50%)}}.portal-wrap{width:145px;height:145px;margin-top:20px}.portal{inset:12px}.portal-core{width:36px;height:36px}.gallery{grid-template-columns:1fr}.card img{height:430px}.letter{padding:28px 22px}.music-card{width:100%}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<section class="hero" id="top">
+  <div class="hero-inner">
+    <div class="web-drop"></div>
+    <img class="spider" src="spiderman_mask.png" alt="" aria-hidden="true">
+
+    <div class="kicker">A little multiverse surprise</div>
+    <h1>
+      <span class="line">HAPPY</span>
+      <span class="line birthday">BIRTHDAY</span>
+      <span class="line amey">AMEY 🫶🏻</span>
+    </h1>
+
+    <div class="portal-wrap" aria-hidden="true">
+      <div class="portal-glow"></div><div class="portal-sparks"></div><div class="portal"></div><div class="portal-core"></div>
+    </div>
+    <div class="portal-label">a little multiverse moment</div>
+
+    <p class="subtitle">Spider-Man has arrived. Doctor Strange opened a portal.<br>Apparently, the multiverse had one very important mission today.</p>
+
+    <div class="music-card">
+      <div class="music-disc">♫</div>
+      <div class="music-copy"><strong>Stand by Me</strong><span>Press play for the birthday soundtrack</span></div>
+      <button class="music-btn" id="musicBtn" type="button">▶ Play</button>
+    </div>
+    <div class="music-hint" id="musicHint">Add your legally obtained “stand-by-me.mp3” beside index.html to play it here.</div>
+    <audio id="bgMusic" loop preload="metadata"><source src="stand-by-me.mp3" type="audio/mpeg"></audio>
+
+    <a class="cta" href="#memories">OPEN YOUR BIRTHDAY PORTAL ✨</a>
+  </div>
+</section>
+
+<section class="story" id="memories">
+  <div class="wrap">
+    <h2 class="section-title">A few of my favourite memories 📸</h2>
+    <p class="section-note">Four little moments that deserved their own corner of the multiverse.</p>
+    <div class="gallery">
+      <article class="card"><img src="photo1.jpeg" alt="Birthday memory with Amey"><div class="caption">One of those random moments that became a memory ❤️</div></article>
+      <article class="card"><img src="photo2.jpeg" alt="Amey at a night event"><div class="caption">Main character energy, obviously.</div></article>
+      <article class="card"><img src="photo3.jpeg" alt="Amey in a white outfit"><div class="caption">Okay… this one deserved to be here. ✨</div></article>
+      <article class="card"><img src="photo4.jpeg" alt="A college memory with Amey"><div class="caption">And one more for the memories. 🫶🏻</div></article>
+    </div>
+    <div class="letter">
+      <h2>For you, Amey 💌</h2>
+      <p>Happiestt birthdayyy amey 🫶🏻,
+
+May u get the bestest of everything, may all ur dreams come true and may u have the happiest, beautiful and peaceful life ahead ❤️</p>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div><span class="heart">❤️</span><h2>Made specially for you.</h2><p>From someone who wanted your birthday to have its own little universe. 🕷️🌀</p></div>
+</section>
+
+<script>
+const audio=document.getElementById('bgMusic');
+const btn=document.getElementById('musicBtn');
+const hint=document.getElementById('musicHint');
+audio.addEventListener('error',()=>{hint.textContent='To play the song inside the site, add a legally obtained “stand-by-me.mp3” file beside index.html.';btn.textContent='♫ Song';});
+btn.addEventListener('click',async()=>{
+  if(audio.paused){try{await audio.play();btn.textContent='❚❚ Pause';hint.textContent='Now playing: Stand by Me ♫';}catch(e){hint.textContent='The audio file is missing. Add “stand-by-me.mp3” beside index.html.';}}
+  else{audio.pause();btn.textContent='▶ Play';hint.textContent='Paused';}
+});
+</script>
+</body>
+</html>
